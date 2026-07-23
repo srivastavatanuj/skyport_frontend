@@ -36,13 +36,20 @@ export default function Footer() {
             </div>
 
             <div className="flex gap-4">
-              <button className="rounded-md bg-amber-500 px-8 py-4 font-semibold hover:bg-amber-600">
-                GET A QUOTE
-              </button>
 
-              <button className="rounded-md border border-white/30 px-8 py-4 hover:bg-white/10">
+              <Link
+                href="/request-a-quote"
+                className="rounded-md bg-amber-500 px-8 py-4 font-semibold hover:bg-amber-600"
+              >
+                GET A QUOTE
+              </Link>
+              <Link
+                href="/contact"
+                className="rounded-md border border-white/30 px-8 py-4 hover:bg-white/10"
+              >
                 CONTACT US
-              </button>
+              </Link>
+
             </div>
           </div>
         </div>
@@ -66,13 +73,13 @@ export default function Footer() {
               className="h-15 w-25"
             />
             <div>
-                   <h2 className="text-3xl font-bold !text-white">SKYPORT</h2>
+              <h2 className="text-3xl font-bold !text-white">SKYPORT</h2>
 
-            <p className="mb-6 text-sm uppercase tracking-widest text-amber-400">
-              Exim Corp
-            </p>
+              <p className="mb-6 text-sm uppercase tracking-widest text-amber-400">
+                Exim Corp
+              </p>
             </div>
-       
+
           </div>
 
 
@@ -155,11 +162,12 @@ export default function Footer() {
         </div>
       </MaxWidthWrapper>
 
-      <div className="border-t border-white/10 py-1 text-center text-xs text-gray-400 flex justify-between px-6">
+      <div className="border-t border-white/10 py-1 text-center text-xs text-gray-400 flex justify-between px-6 opacity-[99%]">
         <span>© {new Date().getFullYear()} Skyport Exim Corp. All Rights Reserved.</span>
-        <span>
-          <a href="">Privacy Policy</a>
-          <a href="">Terms and Conditions</a>
+        <span className="flex gap-1 s">
+          <a className="cursor-pointer" href="/privacy-policy">Privacy Policy</a>
+          <p>|</p>
+          <a className="cursor-pointer" href="/terms-and-conditions">Terms and Conditions</a>
         </span>
 
       </div>

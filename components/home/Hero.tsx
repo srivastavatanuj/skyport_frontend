@@ -1,6 +1,7 @@
 import Image from "next/image";
 import StatsCard from "./StatsCard";
 import Section from "../ui/Section";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -38,13 +39,19 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-5">
-            <button className="rounded-md bg-amber-500 px-8 py-4 font-semibold text-white transition hover:bg-amber-600">
+            <Link
+              href="/business-verticals"
+              className="rounded-md bg-amber-500 px-8 py-4 font-semibold text-white transition hover:bg-amber-600"
+            >
               Explore Business Sectors
-            </button>
+            </Link>
 
-            <button className="rounded-md border border-white/30 px-8 py-4 font-semibold text-white hover:bg-white/10">
+            <Link
+              href="/request-a-quote"
+              className="rounded-md border border-white/30 px-8 py-4  text-white hover:bg-white/10"
+            >
               Request A Quote
-            </button>
+            </Link>
           </div>
         </div>
 
