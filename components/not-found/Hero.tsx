@@ -12,7 +12,8 @@ export default function Hero() {
                 src="/images/not-found/hero.png"
                 alt=""
                 fill
-                className="object-contain"
+                priority
+                className="object-cover"
             />
 
             <span className="absolute h-16 p-5 w-screen top-0 left-0 bg-[#071D3D]"></span>

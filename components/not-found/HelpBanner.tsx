@@ -10,15 +10,6 @@ export default function HelpBanner() {
       <MaxWidthWrapper>
         <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white px-8 py-10 lg:px-14 lg:py-12">
           {/* Background Pattern */}
-          <div
-            className="absolute inset-0 opacity-5"
-            style={{
-              backgroundImage: "url('/images/not-found/world-map.svg')",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "right center",
-              backgroundSize: "contain",
-            }}
-          />
 
           <div className="relative flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
             {/* Left */}

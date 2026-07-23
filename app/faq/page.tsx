@@ -1,7 +1,6 @@
 import PageHero from "@/components/common/PageHero";
 
 import {
-  FAQCTA,
   FAQSection,
 } from "@/components/faq";
 
