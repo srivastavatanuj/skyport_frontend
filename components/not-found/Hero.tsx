@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <Section className="relative bg-slate-100 h-[650px] overflow-hidden">
+        <Section className="!py-15 relative  overflow-hidden">
             <Image
                 src="/images/not-found/hero.png"
                 alt=""

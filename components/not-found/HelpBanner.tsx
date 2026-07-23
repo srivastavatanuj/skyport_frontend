@@ -1,4 +1,4 @@
-import { Mail, Phone, Headphones } from "lucide-react";
+import { Mail, Phone, MessageCircleQuestionMark } from "lucide-react";
 
 import MaxWidthWrapper from "@/components/ui/MaxWidthWrapper";
 import Link from "next/link";
@@ -6,9 +6,9 @@ import { helpInfo } from "@/data/notFound";
 
 export default function HelpBanner() {
   return (
-    <section className="pb-24">
+    <section className="pb-10">
       <MaxWidthWrapper>
-        <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white px-8 py-10 shadow-lg lg:px-14 lg:py-12">
+        <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white px-8 py-10 lg:px-14 lg:py-12">
           {/* Background Pattern */}
           <div
             className="absolute inset-0 opacity-5"
@@ -22,9 +22,9 @@ export default function HelpBanner() {
 
           <div className="relative flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
             {/* Left */}
-            <div className="flex items-start gap-5">
+            <div className="flex items-start gap-3">
               <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-primary/10">
-                <Headphones className="text-primary" size={30} />
+                <MessageCircleQuestionMark className="!text-slate-900" size={50} />
               </div>
 
               <div>
@@ -36,16 +36,11 @@ export default function HelpBanner() {
                   {helpInfo.description}
                 </p>
 
-                <div className="mt-6">
-                  <Link href={helpInfo.buttonHref}>
-                    {helpInfo.buttonText}
-                  </Link>
-                </div>
               </div>
             </div>
 
             {/* Right */}
-            <div className="space-y-5 rounded-2xl bg-slate-50 p-6 lg:min-w-[320px]">
+            <div className="space-y-5 rounded-2xl lg:min-w-[320px]">
               <div className="flex items-center gap-4">
                 <div className="rounded-full bg-primary/10 p-3">
                   <Phone className="text-primary" size={18} />
