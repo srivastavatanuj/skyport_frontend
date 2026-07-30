@@ -100,3 +100,8 @@ textarea {
   background: #f59e0b;
   color: white;
 }
+
+
+.sort-filter button{
+  color:grey
+}

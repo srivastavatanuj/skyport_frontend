@@ -42,7 +42,7 @@ export const verticals = [
       "Premium energy products that power industries and drive economies forward.",
     feature: "Fuels & energy solutions",
     icon: Fuel,
-    href: "/products/energy",
+    href: "/products?select=energy",
   },
   {
     title: "Industrial Materials",
@@ -51,7 +51,7 @@ export const verticals = [
       "High-quality metal scraps and industrial materials for global industries.",
     feature: "Metal scraps & recycling solutions",
     icon: Recycle,
-    href: "/products/metals",
+    href: "/products?select=metals",
   },
   {
     title: "Building Materials",
@@ -60,7 +60,7 @@ export const verticals = [
       "Reliable building materials for strong, sustainable construction.",
     feature: "Plywood & decorative laminates",
     icon: Layers3,
-    href: "/products/plywood",
+    href: "/products?select=plywood",
   },
   {
     title: "Dry Fruits",
@@ -69,7 +69,7 @@ export const verticals = [
       "Naturally delicious and premium quality dry fruits from trusted sources.",
     feature: "Nuts, berries & more",
     icon: Nut,
-    href: "/products/dry-fruits",
+    href: "/products?select=dry-fruits",
   },
   {
     title: "Agri Commodities",
@@ -78,7 +78,7 @@ export const verticals = [
       "High-quality agricultural commodities to nourish the world.",
     feature: "Rice, pulses, millets & more",
     icon: Wheat,
-    href: "/products/agri",
+    href: "/products?select=agri",
   },
   {
     title: "Global Trade Solutions",
@@ -87,7 +87,7 @@ export const verticals = [
       "End-to-end sourcing, logistics and supply chain solutions.",
     feature: "Sourcing, inspection & logistics",
     icon: Globe,
-    href: "/contact",
+    href: "/products?select=agri",
   },
 ];
 

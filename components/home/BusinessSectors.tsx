@@ -6,18 +6,21 @@ const sectors = [
   {
     title: "Energy Products",
     image: "/images/home/products-energy.png",
+    href: "/products?select=energy",
     description:
       "Supplying high-quality energy resources for industrial and commercial markets worldwide.",
   },
   {
     title: "Metal Scrap",
     image: "/images/home/products-metalscrap.png",
+    href: "/products?select=metals",
     description:
       "Reliable sourcing and export of ferrous and non-ferrous metal scrap.",
   },
   {
     title: "Plywood",
     image: "/images/home/products-plywood.png",
+href: "/products?select=plywood",
     description:
       "Premium plywood products meeting global construction and furniture standards.",
   },
@@ -30,15 +33,18 @@ const sectors = [
   {
     title: "Dry Fruits",
     image: "/images/home/products-dryfruits.png",
+    href: "/products?select=dry-fruits",
     description:
       "Fresh, premium-grade dry fruits sourced from trusted international suppliers.",
   },
   {
     title: "Rice & Agro Commodities",
     image: "/images/home/products-agri.png",
+    href: "/products?select=agri",
     description:
       "Export-quality rice and agricultural products with strict quality assurance.",
   },
+  
 ];
 
 export default function BusinessSectors() {
@@ -86,10 +92,10 @@ export default function BusinessSectors() {
                   {sector.description}
                 </p>
 
-                <button className="mt-8 flex items-center gap-2 font-semibold text-amber-500 transition hover:gap-4">
+                {/* <button className="mt-8 flex items-center gap-2 font-semibold text-amber-500 transition hover:gap-4">
                   Learn More
                   <ArrowRight size={18} />
-                </button>
+                </button> */}
               </div>
             </div>
           ))}

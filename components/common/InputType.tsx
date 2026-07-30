@@ -36,13 +36,17 @@ export function Select({
   required,
   error,
   label,
+  value,
+  onChange
 }: {
-  register: any;
+  register?: any;
   options: string[];
   placeholder: string;
   required?: boolean
   error?: any
   label?: string
+  value?:string
+  onChange?:any
 }) {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState("");
