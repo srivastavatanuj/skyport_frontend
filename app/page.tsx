@@ -12,8 +12,7 @@ import GlobalPresence from "@/components/home/GlobalPresence";
 
 export default function Home() {
   return (
-    <MaxWidthWrapper className=" mx-auto !px-0">
-
+<>
         <Hero />
         <About/>
         <BusinessSectors/>
@@ -21,7 +20,6 @@ export default function Home() {
         <WhyChoose/>
         <TradeProcess/>
         
-
-    </MaxWidthWrapper>
+</>
   );
 }
